@@ -17,7 +17,7 @@ You can **drag & drop** an image or **paste (Ctrl+V)**, optionally select an are
 
 ### 2) Install Tesseract OCR (required)
 
-1. Download and install Tesseract for Windows.
+1. Download and install Tesseract for Windows: https://tesseract-ocr.github.io/tessdoc/Installation.html
 2. During installation, keep the default install path if possible:
    - `C:\Program Files\Tesseract-OCR\tesseract.exe`
 
