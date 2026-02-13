@@ -3,6 +3,8 @@
 A simple desktop app to extract text from images using **Tesseract OCR**.
 You can **drag & drop** an image or **paste (Ctrl+V)**, optionally select an area, and run OCR.
 
+![OCRApp](https://github.com/user-attachments/assets/9b73c9c0-6197-41e4-9978-2526b20352a5)
+
 ---
 
 ## Requirements
