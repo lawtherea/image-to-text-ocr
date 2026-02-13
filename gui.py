@@ -13,6 +13,16 @@ from tkinterdnd2 import TkinterDnD, DND_FILES
 
 from ocr_engine import ocr_bgr
 
+import os
+import sys
+
+def resource_path(relative_path: str) -> str:
+    """
+    Returns the correct absolute path for resources both in development
+    and in a PyInstaller onefile build.
+    """
+    base_path = getattr(sys, "_MEIPASS", os.path.abspath("."))
+    return os.path.join(base_path, relative_path)
 
 def _first_path_from_drop(data: str):
     if not data:
@@ -51,6 +61,14 @@ def _first_path_from_drop(data: str):
 class OCRApp(TkinterDnD.Tk):
     def __init__(self):
         super().__init__()
+
+        try:
+            png_path = resource_path(os.path.join("assets", "app.png"))
+            img = Image.open(png_path)
+            self._icon_img = ImageTk.PhotoImage(img)
+            self.iconphoto(True, self._icon_img)
+        except Exception:
+            pass
 
         self.title("OCR - Paste or Drag Image (area selection)")
         self.geometry("1200x720")
