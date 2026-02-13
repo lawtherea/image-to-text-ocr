@@ -1,3 +1,5 @@
+[![Download](https://img.shields.io/badge/Download-Latest%20Release-blue?style=for-the-badge)](https://github.com/lawtherea/image-to-text-ocr/releases/latest)
+
 # OCRApp (Image → Text)
 
 A simple desktop app to extract text from images using **Tesseract OCR**.
